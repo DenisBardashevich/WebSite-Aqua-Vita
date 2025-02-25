@@ -2199,6 +2199,10 @@ a {
 .product-item:hover img {
   transform: scale(1.05);
 }
+.product-items h2{
+  margin-top: 40px;
+  border-bottom: 1px solid rgba(0, 242, 255, 0.425);
+}
 
 /* Product Name */
 .product-item h3 {
@@ -2278,3 +2282,51 @@ a {
     height: 250px;
   }
 }
+.productsList{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+
+}
+.productsList p{
+  border: 1px solid rgba(0, 242, 255, 0.633);
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffffbd;
+  transition: all 0.3s ease-in-out;
+
+
+
+}
+@media (min-width:1025px) {
+  .productsList p:hover{
+    transform: scale(1.1);
+  }
+  
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Изначально скрыта */
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.scroll-top:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
