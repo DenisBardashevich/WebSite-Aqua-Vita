@@ -35,7 +35,7 @@ a {
 }
 .header {
   position: fixed;
-  top: 10px;
+  top: 0px;
   left: 0;
   width: 100%;
   background: #2e6ba9;
@@ -488,7 +488,6 @@ a {
 .contact-image-container {
   position: relative;
   height: 300px;
-  background: url('../img/accessories-3.jpg') no-repeat center center/cover;
 }
 
 .contact-overlay {
@@ -2319,7 +2318,7 @@ a {
   border-radius: 50%;
   font-size: 24px;
   cursor: pointer;
-  display: none; /* Изначально скрыта */
+  display: none; 
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s, transform 0.3s;
@@ -2330,3 +2329,134 @@ a {
   transform: scale(1.1);
 }
 
+.delivery-info {
+  padding: 20px;
+  margin: 60px auto;
+  background-color: rgb(61, 88, 139);
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.delivery-info h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #2e3a59;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.delivery-info h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2e3a59;
+  margin-top: 30px;
+  padding-left: 10px;
+  border-left: 5px solid blue;
+}
+
+.delivery-info p {
+  font-size: 1.1rem;
+  color: #16aca2;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.delivery-info ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.delivery-info ul li {
+  background-color: #4f7398;
+  color: white;
+  font-size: 1.1rem;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.delivery-info ul li:hover {
+  background-color: #1a64ad;
+}
+
+.delivery-info a {
+  color: aqua;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .delivery-info h1 {
+      font-size: 2rem;
+  }
+
+  .delivery-info h2 {
+      font-size: 1.4rem;
+  }
+
+  .delivery-info p {
+      font-size: 1rem;
+  }
+
+  .delivery-info ul li {
+      font-size: 1rem;
+      padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .delivery-info h1 {
+      font-size: 1.8rem;
+  }
+
+  .delivery-info p {
+      font-size: 0.9rem;
+  }
+}
+
+.delivery-img, .delivery-banner {
+  max-width: 100%;
+  margin: 30px 0;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.delivery-info img{
+  height: 300px;
+  width: 60%;
+  object-fit: cover;
+  margin-left: 20%;
+}
+
+
+@media (max-width:426px) {
+  .products{
+    padding: 60px 5px;
+  }
+  .delivery-info img{
+    width: 100%;
+    margin-left: 0;
+  }
+  .hero-paragraph{
+    font-size: 35px;
+  }
+  .blog{
+    padding: 40px 0;
+  }
+  .container{
+    padding: 3px;
+  }
+  
+}
