@@ -1921,6 +1921,7 @@ a {
     flex-direction: column;
     gap: 10px;
     padding: 20px;
+    background-color: #2e6ba9;
   }
 
   .order-content {
